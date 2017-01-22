@@ -1,3 +1,4 @@
+local FruitItem = class("FruitItem", function(x, y, fruitIndex)
 	fruitIndex = fruitIndex or math.round(math.random() * 1000) % 8 + 1
 	local sprite = display.newSprite("#fruit"  .. fruitIndex .. '_1.png')
 	sprite.fruitIndex = fruitIndex
@@ -40,4 +41,3 @@ function FruitItem.getWidth()
 end
 
 return FruitItem
-
